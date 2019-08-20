@@ -1,21 +1,24 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import createSagaMiddleware from 'redux-saga'
-import persistState from 'redux-localstorage'
-import rootReducer from 'reducers/rootReducer'
-import rootSagas from 'sagas/rootSaga'
+import { createStore, applyMiddleware, compose } from 'redux';
+import promise from 'redux-promise-middleware';
+import thunk from 'redux-thunk';
+import persistState from 'redux-localstorage';
+import rootReducer from 'reducers/rootReducer';
 
-// Create sagas middleware
-const sagaMiddleware = createSagaMiddleware()
 const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
 	trace: true,
 	traceLimit: 100
 })) || compose
 
+const createStoreWithMiddleware = composeEnhancers(
+  applyMiddleware(
+    thunk,
+    promise,
+  ),
+  persistState('auth'),
+  window.REDUX_DEVTOOLS_EXTENSION ? window.devToolsExtension() : f => f,
+)(createStore);
+
 export default function configureStore() {
-  const store = createStore(rootReducer, composeEnhancers(applyMiddleware(
-    sagaMiddleware
-  ), persistState('auth')))
-  // Running sagas
-  sagaMiddleware.run(rootSagas)
-  return store
+  const store = createStoreWithMiddleware(rootReducer);
+  return store;
 }
