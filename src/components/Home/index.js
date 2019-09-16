@@ -1,26 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Button from 'react-bootstrap/Button';
-import Layout from 'common/Layout'
-import { pushNotification } from 'utils/notifications'
-import Texts from 'constants/staticText'
+import { Container } from 'semantic-ui-react'
+import Layout from 'containers/Layout'
+// import Texts from 'constants/staticText'
 
 const Home = (props) => {
-  const { getList } = props
+
   return (
     <Layout>
-      <Button onClick={() => getList()} style={{ marginTop: '250px' }}>
-        {Texts.CHECK_API_CALL}
-      </Button>
-      <Button onClick={() => pushNotification('test', 'success')} style={{ marginTop: '250px' }}>
-        {Texts.GET_NOTIFCATION}
-      </Button>
+      <Container>
+      Hello
+      </Container>
     </Layout>
   )
 }
 
 Home.propTypes = {
-  getList: PropTypes.func
+  home: PropTypes.object
 }
 
 export default Home

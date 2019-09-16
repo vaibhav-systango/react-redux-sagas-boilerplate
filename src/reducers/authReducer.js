@@ -1,39 +1,69 @@
 import {
-  GET_LIST,
-  GET_LIST_SUCCESS,
-  GET_LIST_FAILURE
+  LOGIN_REQUEST,
+  LOGIN_REQUEST_SUCCESS,
+  LOGIN_REQUEST_FAILURE,
+  SIGNUP_REQUEST,
+  SIGNUP_REQUEST_SUCCESS,
+  SIGNUP_REQUEST_FAILURE
 } from 'actions/Auth/actionTypes'
 
 const initialState = {
-  getListLoading: false,
-  posts: []
+  posts: [],
+  isLoggingIn: false,
+  isRegistering: false,
+  user: {
+    country: null,
+    firstName: null,
+    lastName: null,
+    preferredCurrency: null,
+    profileImage: null
+  }
 }
 
-const getList = (state, action) => ({
+const loginStart = (state, action) => ({
   ...state,
-  getListLoading: true
+  isLoggingIn: true
 })
 
-const getListSuccess = (state, action) => {
-  console.log('check the data in reducer', action)
+const loginSuccess = (state, action) => {
+  const { data } = action.payload
   return ({
     ...state,
-    getListLoading: false,
-    posts: action.payload
+    isLoggingIn: false,
+    user: data.userDetails ? { ...data.userDetails } : { ...state.user }
   })
 }
 
-const getListFailed = (state, action) => ({
+const loginFailure = (state, action) => ({
   ...state,
-  getListLoading: false,
-  posts: []
+  isLoggingIn: false
+})
+
+const registerStart = (state, action) => ({
+  ...state,
+  isRegistering: true
+})
+
+const registerSuccess = (state, action) => {
+  return ({
+    ...state,
+    isRegistering: false
+  })
+}
+
+const registerFailed = (state, action) => ({
+  ...state,
+  isRegistering: false
 })
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_LIST: return getList(state, action)
-    case GET_LIST_SUCCESS: return getListSuccess(state, action)
-    case GET_LIST_FAILURE: return getListFailed(state, action)
+    case LOGIN_REQUEST: return loginStart(state, action)
+    case LOGIN_REQUEST_SUCCESS: return loginSuccess(state, action)
+    case LOGIN_REQUEST_FAILURE: return loginFailure(state, action)
+    case SIGNUP_REQUEST: return registerStart(state, action)
+    case SIGNUP_REQUEST_SUCCESS: return registerSuccess(state, action)
+    case SIGNUP_REQUEST_FAILURE: return registerFailed(state, action)
     default: return state
   }
 }

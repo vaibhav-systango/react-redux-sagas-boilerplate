@@ -20,12 +20,6 @@
   <link rel="apple-touch-startup-image" href="/images/icons/launch.png">
   <link rel="apple-touch-icon" href="/images/icons/custom_icon.png">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-  />
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -35,7 +29,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React PWA App</title>
+  <title>React Boilerplate</title>
   <!-- Add in some basic styles for our HTML -->
   <style type="text/css">
     body {
@@ -58,12 +52,365 @@
     .App-intro {
       font-size: large;
     }
+
+    .full-page-loader {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .full-page-loader>img {
+      animation: 1.8s infinite heartbeat;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+
+      25% {
+        transform: scale(1.05);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+
+      75% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-display: auto;
+    }
+
+    .App {
+      text-align: center;
+    }
+
+    .App-header {
+      background-color: #222;
+      height: 150px;
+      padding: 20px;
+      color: white;
+    }
+
+    .App-intro {
+      font-size: large;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #1b2139;
+    }
+
+    input::-moz-placeholder {
+      color: #1b2139;
+    }
+
+    input:-ms-input-placeholder {
+      color: #1b2139;
+    }
+
+    input:-moz-placeholder {
+      color: #1b2139;
+    }
+
+    .custom-menudropdown {
+      max-height: 170px !important;
+      max-width: 95px !important;
+      border-radius: 6px !important;
+      margin-top: 32px;
+      width: 100%;
+      margin-left: -9px;
+    }
+
+    .custom-menudropdown ul {
+      padding: 5px 0;
+    }
+
+    .custom-menudropdown li {
+      padding: 0 0 0 12px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .custom-menudropdown li:hover {
+      color: #db0040;
+      background: #fff;
+    }
+
+    .custom-menudropdown::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-menudropdown::-webkit-scrollbar-track {
+      background: #cfd1d3;
+    }
+
+    .custom-menudropdown::-webkit-scrollbar-thumb {
+      background: #db0040;
+    }
+
+    .add-to-home-banner {
+      z-index: 999;
+    }
+
+    .full-page-loader {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    /**----Update Modal---**/
+    body.show {
+      position: relative;
+      overflow: hidden;
+    }
+
+    body.show:after {
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      position: fixed;
+      touch-action: none;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .update-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      display: none;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body.show .update-modal {
+      display: flex;
+    }
+
+    .update-modal .modal-body {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .update-modal .modal-body img {
+      width: 100%;
+      display: block;
+    }
+
+    .update-modal .modal-content-box {
+      background: #fff;
+      text-align: center;
+      width: 100%;
+      padding: 10px 0 30px;
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+    }
+
+    .update-modal .modal-content-box h3 {
+      color: #121729;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.6;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .update-modal .modal-content-box p {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgb(62, 69, 97);
+      line-height: 1.5;
+      margin-top: 0;
+    }
+
+    .update-modal .modal-content-box button {
+      padding: 6px 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 120px;
+      color: rgb(255, 255, 255);
+      transform: skewX(15deg);
+      padding-left: 10px;
+      padding-right: 10px;
+      min-width: 100px;
+      font-weight: 600;
+      transition: all 0.1s ease-in 0s;
+      background: rgb(219, 0, 64);
+      border-radius: 0px;
+      border: 0;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.75;
+      cursor: pointer;
+    }
+
+    .update-modal .modal-content-box button span {
+      transform: skewX(-15deg);
+      display: block;
+    }
+
+    .update-modal .modal-content-box button.grey {
+      background: rgb(62, 69, 97);
+    }
+
+    .update-modal .modal-content-box button:hover {
+      background: rgb(18, 23, 41);
+      box-shadow: 4px 4px 0 rgb(219, 0, 64);
+    }
+
+    .offline-notification {
+      transition: transform 0.3s;
+      transform: translateX(-50%);
+      position: fixed;
+      left: 50%;
+      background: #3c021b;
+      color: white;
+      padding: 7px 12px 10px;
+      text-align: center;
+      top: 25px;
+      color: #db0040;
+      font-size: 13px;
+      display: none;
+      font-weight: 500;
+      z-index: 99;
+      border-radius: 5px;
+    }
+
+    .offline {
+      display: block !important;
+    }
+
+    .offline-notification>img {
+      margin-right: 7px;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+    .offline-notification button {
+      background: transparent;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding: 0;
+      margin-left: 10px;
+      transition: all 0.1s;
+    }
+
+    .offline-notification button:hover {
+      opacity: 0.5;
+    }
+
+    .notification-visible:after,
+    .notification-visible:before {
+      content: '';
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 5px;
+    }
+
+    .notification-visible:after {
+      background: #121729;
+      right: 0;
+      z-index: 1;
+    }
+
+    .notification-visible:before {
+      background: #db0040;
+      animation: dude 1s 1 forwards;
+      width: 0;
+      z-index: 2;
+    }
+
+    @keyframes dude {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
-<body>
+<body class="hide">
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <div class="update-modal">
+    <div class="modal-body">
+      <div class="modal-content-box">
+        <h3>It's time to update</h3>
+        <p>A new version of this app is available.<br />Click 'OK' to update.</p>
+        <button id="reload" type="button">
+          <span>OK</span>
+        </button>
+        <button type="button" onClick="closeRefreshPopup()" class="grey">
+          <span>Later</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function dismissOfflineNotification() {
+      console.log("dismissOfflineNotification()==");
+      var element = document.getElementById("offline-notification");
+      element.classList.remove("offline");
+      document.body.classList.remove("notification-visible");
+    }
+    function closeRefreshPopup() {
+      const { body } = document;
+      body.className = 'hide';
+    }
+    window.addEventListener("load", () => {
+      function handleNetworkChange(event) {
+        var element = document.getElementById("offline-notification")
+        if (navigator.onLine) {
+          element.classList.remove("offline");
+          document.body.classList.remove("notification-visible")
+        } else {
+          element.classList.add("offline");
+          document.body.classList.add("notification-visible")
+        }
+      }
+      window.addEventListener("online", handleNetworkChange)
+      window.addEventListener("offline", handleNetworkChange)
+    });
+  </script>
   <script>
       // if ('serviceWorker' in navigator) {
       //   window.addEventListener('load', function() {

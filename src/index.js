@@ -1,18 +1,20 @@
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from 'react-router-dom'
+import browserHistory from 'utils/history'
 import { Provider } from 'react-redux'
 import { toast } from 'react-toastify'
 import App from 'containers/App'
 import * as serviceWorker from './serviceWorker'
 import configureStore from './store'
+
+
+import 'semantic-ui-css/semantic.min.css'
 import './index.css'
 import 'react-toastify/dist/ReactToastify.css'
-import browserHistory from 'utils/history'; 
-// import { initializeFirebase, askForPermissionToReceiveNotifications } from './push-notification'
-// import * as firebase from 'firebase'
 
-const store = configureStore()
+const { store } = configureStore();
+
 toast.configure()
 ReactDOM.render((
   <Provider store={store}>

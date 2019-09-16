@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,4 +10,97 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+ .mylist{
+   height: 100px;
+   overflow-y: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+ .mylist li{
+   list-style-type: none;
+   border-bottom: 1px solid black;
+  background-color: cyan;
+  margin-bottom: 5px;
+ }
+
+.leftCal{
+  width: 600px;
+}
+
+.CalendarMonthGrid__vertical_scrollable, .DayPicker_transitionContainer__verticalScrollable {
+  /* margin: 0 auto; */
+  overflow-y: hidden !important;
+}
+
+/* .DayPicker_transitionContainer__vertical{
+  height: 172vh !important;
+} */
+/* .CalendarMonthGrid__vertical{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 600px;
+}
+.CalendarMonthGrid__vertical > div{
+  flex-basis: 50%;
+  width: 100%;
+} */
+
+.rc-tree-select-tree li span.rc-tree-select-tree-switcher, .rc-tree-select-tree li span.rc-tree-select-tree-checkbox, .rc-tree-select-tree li span.rc-tree-select-tree-iconEle {
+  position: absolute;
+  right: 0;
+}
+
+.rc-tree-select-tree-treenode-switcher-open .rc-tree-select-tree-treenode-selected{
+  background: cyan;
+}
+
+.CalendarDay__default{
+  border: none !important;
+}
+
+.CalendarMonth_verticalSpacing tr td:first-child{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.CalendarMonth_verticalSpacing tr td:last-child{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Loading spinner */
+.loader{
+  align-self: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width:100vw;
+  z-index: 999;
+  top: 0px;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.loader ul{
+  padding-left: 0;
+}
+
+.loader ul li{
+  list-style-type: none;
+  text-align: center
+}
+
+.small_loader{
+  align-self: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  height: 95%;
+  width: 78%;
+  padding-top: 35%;
 }
