@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  web-prod:
+    container_name: web-prod
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '80:80'
+    env_file: .env
