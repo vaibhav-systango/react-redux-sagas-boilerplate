@@ -29,7 +29,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+*Note: this is a one-way operation. Once you `eject`, you can’t go back!*
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
@@ -67,47 +67,62 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### Folder structure writeup
+## Folder structure writeup
 ### Public - 
-this folder has the index.html file that is important for app to start. It also contains the maifest json file that is important to make an app PWA, Along with that it also has favicon that is used as a title icon in the tab on browser and an images folder thats has common image assets to it.
+This folder contains all the static assets including index.html, images & css that will be injected into the build folder created from the command npm run build.Here we also have manifest.json , where we specify basic metadata about extensions such as the name and version, and can also specify aspects of your extension's functionality, one can configure to make an app PWA. Along with that it also has a favicon & images folder that has common image assets in it.
 
-### src - 
-under src folder we have various sub folders that are important in maintaining the good understandable code base like as follows
-    ## actions - the actions folder consist of an actionType and index file the actionType has const to identify actions uniquely and the index files has actions definations that needs to be dispatched
-    ## assets - assets folder further consist of images folder that is required to put images and other assets to be accesed within src
-    ## common - the common folder consist of the components that common for all other components and are frequently used, like header, footer and a common layout
-    ## components - components folder consist of various components that are used in different parts of app and are part of component attribute in route definition. It is structured in a manner that has component named folder that further consist of index file and a styling scss file for that component.
-    ## constants - as the name suggest the constant folders has the file that consist logically grouped constants like static text and urls used in the app.
-    ## container - the container consist of files that imports a stateless component and wraps it with ations and state to be able to access store and dispatch necessary actions.
-    ## reducer - this folder consist of different reducers based on the types of actions and these reducer functions are finally responsible for managing the data store, we have a root reducer where we combine all the reducers that are logically segregated and export them as one combine reducer.
-    ## saga - Redux-saga is a redux middleware library, that makes handling side effects in redux app nice and simple. in this folder we have different saga file corresponding to each action and request js that has different functions defined that are a part of axios instance with different configs. 
-              also it consist of rootsaga js file that puts all different sagas in one.
-    ## service - the service folder consist of api js file that has the instance of axios defined with all the required configs to make a rest call.
-    ## utils - the utils folder consist of all the utility part of app that we would need frequently in different parts of app like 
-              a) the formUtils has different form components along with validator, 
-              b) also it has history js utils that we might need to route logically between views,
-              c) interceptor js that is used to intercepth the request like adding tokens,
-              d) notification js build to display various alert notifications on the top either corners in case of success, alert, info or warnings to be shown to user
-              e) private routes js this is a logical route component to stop user from accessing the unauthorized routes.
-    ## index css - this is the common css file where we can add the common styling that applies to all parts of app.
-    ## index js - this is the most important file where we mount our app on to a root element
-    ## push-notifications js - this is useful in implementing the push notification from firebase, basically needed for PWA.
-    ## serviceWorkers js - the serviceworker file is again important in terms of PWA it helps enable you to run JavaScript before a page even exists, makes your site faster, and allows you to display content even if there is no internet connection.
-    ## store js - this file is important in terms of implementing redux in our app the store is created here using the middleware
+## src -
+Under src folder we have various sub folders that are important in maintaining the good understandable code structure:
 
-### babelrc js - 
+### actions -
+The actions folder consist of an actionType and index file the actionType has const to identify actions uniquely and the index files has actions definitions that needs to be dispatched.
+## assets -
+assets folder further consist of images folder that is required to put images and other assets to be accessed within src.
+## common -
+The common folder consist of the components that common for all other components and are frequently used, like header, footer and a common layout.
+### components -
+components folder consist of various components that are used in different parts of the app and are part of component attributes in route definition. It is structured in a manner that has a component named folder that further consist of index file and a styling scss file for that component.
+### constants -
+As the name suggests the constant folders has the file that consist logically grouped constants like static text and urls used in the app.
+### container -
+The container consists of files that imports a stateless component and wraps it with actions and state to be able to access store and dispatch necessary actions.
+### reducer - 
+This folder consists of different reducers based on the types of actions and these reducer functions are finally responsible for managing the data store, we have a root reducer where we combine all the reducers that are logically segregated and export them as one combine reducer.
+### saga -
+Redux-saga is a redux middleware library that makes handling side effects in redux app nice and simple. In this folder we have a different saga file corresponding to each action and request js that has different functions defined that are a part of axios instance with different configs. Also it consists of a rootsaga.js file that combines all different component specific sagas into one rootsaga.
+### service -
+The service folder consists of api js file that has the instance of axios defined with all the required configs to make a rest call.
+### utils -
+The utils folder consist of all the utility part of app that we would need frequently in different parts of app like  
+    a) the formUtils has different form components along with validator,  
+    b) also it has history js utils that we might need to route logically between views,  
+    c) interceptor js that is used to intercept the request like adding tokens,  
+    d) notification js build to display various alert notifications on the top either corners in case of success, alert, info or warnings to be shown to user,  
+    e) private routes js this is a logical route component to stop user from accessing the unauthorized routes.
+### index css -
+This is the common css file where we can add the common styling that applies to all parts of the app.
+### index js -
+This is the most important file where we mount our app onto a root element
+### push-notifications js -
+In this file we initialize the firebase object instance and use for implementing the push notification from firebase, basically needed for PWA.
+### serviceWorkers js -
+The serviceworker file is again important in terms of PWA it helps enable you to run JavaScript before a page even exists, makes your site faster, and allows you to display content even if there is no internet connection.
+### store js -
+This file is needed for implementing of redux in our app, the store is created here using the middleware.
+
+### babelrc.js - 
 would be useful if you want to run certain transformations / plugins on a subset of files /directories.
 ### .env - 
-this is the file where we write all our environment variables like the api base url and other keys.
+This is the file where we write all our environment variables like the api base url and other keys.
 ### .gitignore - 
-this is the file where we mention the files and folder to be ignored by our versioning tool like git
+This is the file where we mention the files and folder to be ignored by our versioning tool like git.
 ### babel.config js -
-This establishes Babel's core concept of the base directory of your repository. You can place all of your repo configuration in the root babel.config
+This establishes Babel's core concept of the base directory of your repository. You can place all of your repo configuration in the root babel.config.
 ### jest-setup js - 
-this is the file where we declare out adapter that are useful in terms of unit testing code
-### jsconfig js - 
-the js config js consist of declaration for absolute routing, the paths here must be predefined
+This is the file where we declare adapter that are useful in terms of unit testing code also we can add here few other jest configuration parameters.
+### jsconfig json - 
+The jsconfig json consist of declaration for absolute routing, the paths here must be predefined and other javascript configurations can be added here.
 ### package json - 
-this is the heart of a react app that has all information about the package dependency, dev dependency and app info
+package json is used to store the metadata associated with the project as well as to store the list of dependency packages.
 ### test-env js - 
-this is the file configuration for jest environment configuration
+This is the file configuration for the env file.
