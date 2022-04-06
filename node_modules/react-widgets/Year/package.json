@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Year",
+  "private": true,
+  "main": "../cjs/Year.js",
+  "module": "../esm/Year.js",
+  "types": "../esm/Year.d.ts"
+}

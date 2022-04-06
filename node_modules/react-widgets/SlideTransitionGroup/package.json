@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/SlideTransitionGroup",
+  "private": true,
+  "main": "../cjs/SlideTransitionGroup.js",
+  "module": "../esm/SlideTransitionGroup.js",
+  "types": "../esm/SlideTransitionGroup.d.ts"
+}

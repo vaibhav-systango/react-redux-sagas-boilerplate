@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Popup",
+  "private": true,
+  "main": "../cjs/Popup.js",
+  "module": "../esm/Popup.js",
+  "types": "../esm/Popup.d.ts"
+}

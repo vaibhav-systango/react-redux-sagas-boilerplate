@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Filter",
+  "private": true,
+  "main": "../cjs/Filter.js",
+  "module": "../esm/Filter.js",
+  "types": "../esm/Filter.d.ts"
+}

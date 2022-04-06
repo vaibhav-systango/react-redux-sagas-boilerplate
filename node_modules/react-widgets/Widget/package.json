@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Widget",
+  "private": true,
+  "main": "../cjs/Widget.js",
+  "module": "../esm/Widget.js",
+  "types": "../esm/Widget.d.ts"
+}

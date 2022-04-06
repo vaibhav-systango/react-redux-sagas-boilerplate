@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/InputAddon",
+  "private": true,
+  "main": "../cjs/InputAddon.js",
+  "module": "../esm/InputAddon.js",
+  "types": "../esm/InputAddon.d.ts"
+}

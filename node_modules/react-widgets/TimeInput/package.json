@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/TimeInput",
+  "private": true,
+  "main": "../cjs/TimeInput.js",
+  "module": "../esm/TimeInput.js",
+  "types": "../esm/TimeInput.d.ts"
+}

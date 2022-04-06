@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/SlideDownTransition",
+  "private": true,
+  "main": "../cjs/SlideDownTransition.js",
+  "module": "../esm/SlideDownTransition.js",
+  "types": "../esm/SlideDownTransition.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/ListOptionGroup",
+  "private": true,
+  "main": "../cjs/ListOptionGroup.js",
+  "module": "../esm/ListOptionGroup.js",
+  "types": "../esm/ListOptionGroup.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/A11y",
+  "private": true,
+  "main": "../cjs/A11y.js",
+  "module": "../esm/A11y.js",
+  "types": "../esm/A11y.d.ts"
+}

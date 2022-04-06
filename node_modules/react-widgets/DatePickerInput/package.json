@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/DatePickerInput",
+  "private": true,
+  "main": "../cjs/DatePickerInput.js",
+  "module": "../esm/DatePickerInput.js",
+  "types": "../esm/DatePickerInput.d.ts"
+}

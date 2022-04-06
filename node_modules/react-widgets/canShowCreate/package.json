@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/canShowCreate",
+  "private": true,
+  "main": "../cjs/canShowCreate.js",
+  "module": "../esm/canShowCreate.js",
+  "types": "../esm/canShowCreate.d.ts"
+}

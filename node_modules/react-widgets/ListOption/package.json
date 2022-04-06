@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/ListOption",
+  "private": true,
+  "main": "../cjs/ListOption.js",
+  "module": "../esm/ListOption.js",
+  "types": "../esm/ListOption.d.ts"
+}

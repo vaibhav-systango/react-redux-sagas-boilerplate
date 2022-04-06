@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/MultiselectTagList",
+  "private": true,
+  "main": "../cjs/MultiselectTagList.js",
+  "module": "../esm/MultiselectTagList.js",
+  "types": "../esm/MultiselectTagList.d.ts"
+}

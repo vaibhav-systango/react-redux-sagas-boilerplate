@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/useDropdownToggle",
+  "private": true,
+  "main": "../cjs/useDropdownToggle.js",
+  "module": "../esm/useDropdownToggle.js",
+  "types": "../esm/useDropdownToggle.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/useAutoFocus",
+  "private": true,
+  "main": "../cjs/useAutoFocus.js",
+  "module": "../esm/useAutoFocus.js",
+  "types": "../esm/useAutoFocus.d.ts"
+}

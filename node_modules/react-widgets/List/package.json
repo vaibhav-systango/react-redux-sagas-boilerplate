@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/List",
+  "private": true,
+  "main": "../cjs/List.js",
+  "module": "../esm/List.js",
+  "types": "../esm/List.d.ts"
+}

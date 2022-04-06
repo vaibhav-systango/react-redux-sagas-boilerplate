@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Calendar",
+  "private": true,
+  "main": "../cjs/Calendar.js",
+  "module": "../esm/Calendar.js",
+  "types": "../esm/Calendar.d.ts"
+}

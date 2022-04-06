@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/messages",
+  "private": true,
+  "main": "../cjs/messages.js",
+  "module": "../esm/messages.js",
+  "types": "../esm/messages.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Century",
+  "private": true,
+  "main": "../cjs/Century.js",
+  "module": "../esm/Century.js",
+  "types": "../esm/Century.d.ts"
+}

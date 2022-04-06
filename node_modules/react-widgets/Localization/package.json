@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Localization",
+  "private": true,
+  "main": "../cjs/Localization.js",
+  "module": "../esm/Localization.js",
+  "types": "../esm/Localization.d.ts"
+}

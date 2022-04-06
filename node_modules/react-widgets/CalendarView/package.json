@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/CalendarView",
+  "private": true,
+  "main": "../cjs/CalendarView.js",
+  "module": "../esm/CalendarView.js",
+  "types": "../esm/CalendarView.d.ts"
+}

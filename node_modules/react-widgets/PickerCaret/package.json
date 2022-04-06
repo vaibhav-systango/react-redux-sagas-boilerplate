@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/PickerCaret",
+  "private": true,
+  "main": "../cjs/PickerCaret.js",
+  "module": "../esm/PickerCaret.js",
+  "types": "../esm/PickerCaret.d.ts"
+}

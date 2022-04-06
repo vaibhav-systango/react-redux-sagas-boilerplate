@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/DropdownListInput",
+  "private": true,
+  "main": "../cjs/DropdownListInput.js",
+  "module": "../esm/DropdownListInput.js",
+  "types": "../esm/DropdownListInput.d.ts"
+}

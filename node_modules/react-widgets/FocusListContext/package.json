@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/FocusListContext",
+  "private": true,
+  "main": "../cjs/FocusListContext.js",
+  "module": "../esm/FocusListContext.js",
+  "types": "../esm/FocusListContext.d.ts"
+}

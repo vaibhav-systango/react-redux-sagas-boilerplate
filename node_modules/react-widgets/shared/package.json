@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/shared",
+  "private": true,
+  "main": "../cjs/shared.js",
+  "module": "../esm/shared.js",
+  "types": "../esm/shared.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/WidgetHelpers",
+  "private": true,
+  "main": "../cjs/WidgetHelpers.js",
+  "module": "../esm/WidgetHelpers.js",
+  "types": "../esm/WidgetHelpers.d.ts"
+}

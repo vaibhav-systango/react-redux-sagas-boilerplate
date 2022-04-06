@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/MultiselectInput",
+  "private": true,
+  "main": "../cjs/MultiselectInput.js",
+  "module": "../esm/MultiselectInput.js",
+  "types": "../esm/MultiselectInput.d.ts"
+}

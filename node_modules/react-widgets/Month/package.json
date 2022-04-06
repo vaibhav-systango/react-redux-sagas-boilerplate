@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Month",
+  "private": true,
+  "main": "../cjs/Month.js",
+  "module": "../esm/Month.js",
+  "types": "../esm/Month.d.ts"
+}

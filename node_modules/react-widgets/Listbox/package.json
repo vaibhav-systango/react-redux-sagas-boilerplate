@@ -1,0 +1,7 @@
+{
+  "name": "react-widgets/Listbox",
+  "private": true,
+  "main": "../cjs/Listbox.js",
+  "module": "../esm/Listbox.js",
+  "types": "../esm/Listbox.d.ts"
+}
