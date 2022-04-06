@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 
 import Layout from 'common/Layout';
@@ -13,7 +13,7 @@ const Home = (props) => {
   const dispatch = useDispatch();
 
   // use redux store state like mentioned below.
-  const authState = useSelector((state) => state.auth);
+  // const authState = useSelector((state) => state.auth);
 
   return (
     <Layout>
