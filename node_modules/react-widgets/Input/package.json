@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/Input",
-  "private": true,
-  "main": "../cjs/Input.js",
-  "module": "../esm/Input.js",
-  "types": "../esm/Input.d.ts"
-}

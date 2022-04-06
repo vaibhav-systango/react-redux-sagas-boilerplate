@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/WidgetPicker",
-  "private": true,
-  "main": "../cjs/WidgetPicker.js",
-  "module": "../esm/WidgetPicker.js",
-  "types": "../esm/WidgetPicker.d.ts"
-}

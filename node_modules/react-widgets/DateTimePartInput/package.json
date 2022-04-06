@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/DateTimePartInput",
-  "private": true,
-  "main": "../cjs/DateTimePartInput.js",
-  "module": "../esm/DateTimePartInput.js",
-  "types": "../esm/DateTimePartInput.d.ts"
-}

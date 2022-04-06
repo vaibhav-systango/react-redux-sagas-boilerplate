@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/dates",
-  "private": true,
-  "main": "../cjs/dates.js",
-  "module": "../esm/dates.js",
-  "types": "../esm/dates.d.ts"
-}

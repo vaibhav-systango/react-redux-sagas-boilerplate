@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/CalendarHeader",
-  "private": true,
-  "main": "../cjs/CalendarHeader.js",
-  "module": "../esm/CalendarHeader.js",
-  "types": "../esm/CalendarHeader.d.ts"
-}

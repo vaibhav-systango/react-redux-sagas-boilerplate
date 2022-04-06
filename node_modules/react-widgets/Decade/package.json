@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/Decade",
-  "private": true,
-  "main": "../cjs/Decade.js",
-  "module": "../esm/Decade.js",
-  "types": "../esm/Decade.d.ts"
-}

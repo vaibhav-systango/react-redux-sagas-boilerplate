@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/Combobox",
-  "private": true,
-  "main": "../cjs/Combobox.js",
-  "module": "../esm/Combobox.js",
-  "types": "../esm/Combobox.d.ts"
-}

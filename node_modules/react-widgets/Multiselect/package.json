@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/Multiselect",
-  "private": true,
-  "main": "../cjs/Multiselect.js",
-  "module": "../esm/Multiselect.js",
-  "types": "../esm/Multiselect.d.ts"
-}

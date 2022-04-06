@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/Accessors",
-  "private": true,
-  "main": "../cjs/Accessors.js",
-  "module": "../esm/Accessors.js",
-  "types": "../esm/Accessors.d.ts"
-}

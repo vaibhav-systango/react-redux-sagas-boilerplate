@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/NumberInput",
-  "private": true,
-  "main": "../cjs/NumberInput.js",
-  "module": "../esm/NumberInput.js",
-  "types": "../esm/NumberInput.d.ts"
-}

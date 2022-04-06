@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/Autocomplete",
-  "private": true,
-  "main": "../cjs/Autocomplete.js",
-  "module": "../esm/Autocomplete.js",
-  "types": "../esm/Autocomplete.d.ts"
-}

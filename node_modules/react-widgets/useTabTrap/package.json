@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/useTabTrap",
-  "private": true,
-  "main": "../cjs/useTabTrap.js",
-  "module": "../esm/useTabTrap.js",
-  "types": "../esm/useTabTrap.d.ts"
-}

@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/_",
-  "private": true,
-  "main": "../cjs/_.js",
-  "module": "../esm/_.js",
-  "types": "../esm/_.d.ts"
-}

@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/PropTypes",
-  "private": true,
-  "main": "../cjs/PropTypes.js",
-  "module": "../esm/PropTypes.js",
-  "types": "../esm/PropTypes.d.ts"
-}

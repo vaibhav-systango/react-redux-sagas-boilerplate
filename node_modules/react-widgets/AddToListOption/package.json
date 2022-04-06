@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/AddToListOption",
-  "private": true,
-  "main": "../cjs/AddToListOption.js",
-  "module": "../esm/AddToListOption.js",
-  "types": "../esm/AddToListOption.d.ts"
-}

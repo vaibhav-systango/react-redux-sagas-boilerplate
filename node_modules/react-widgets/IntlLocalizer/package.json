@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/IntlLocalizer",
-  "private": true,
-  "main": "../cjs/IntlLocalizer.js",
-  "module": "../esm/IntlLocalizer.js",
-  "types": "../esm/IntlLocalizer.d.ts"
-}

@@ -1,7 +1,0 @@
-{
-  "name": "react-widgets/NumberPicker",
-  "private": true,
-  "main": "../cjs/NumberPicker.js",
-  "module": "../esm/NumberPicker.js",
-  "types": "../esm/NumberPicker.d.ts"
-}
